@@ -147,7 +147,7 @@ gulp.task('deploy', ['build:optimized'], function() {
   gulp.src('')
     .pipe(shell('rsync -avuzh dist/* dan:/srv/gamesthatmadeus.com/public_html/'))
     .on('finish', function() {
-      process.stdout.write('Deployed to work.minimill.co/TITLE/');
+      process.stdout.write('Deployed to gamesthatmadeus.com');
     });
 });
 
