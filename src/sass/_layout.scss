@@ -1,0 +1,27 @@
+$content-width: 60rem;
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.content {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: $content-width;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  .content {
+    width: 100%;
+  }
+
+  .main {
+    justify-content: flex-start;
+  }
+}

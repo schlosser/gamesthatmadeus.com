@@ -1,0 +1,66 @@
+// Font weights
+$bold: 700;
+$regular: 400;
+
+$sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+h1, %h1 {
+  font-size: 2rem;
+  font-weight: $regular;
+}
+
+h2, %h2 {
+  font-size: 1rem;
+  font-weight: $bold;
+  letter-spacing: 4px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3, %h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+h4, %h4 {
+  font-size: 0.75rem;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h5, %h5 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+p, .p {
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+@media screen and (max-width: $tablet-landscape-max) {
+  h1, %h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: $tablet-portrait-max) {
+  h1, %h1 {
+    font-size: 2rem;
+  }
+
+  h4, %h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  h1, %h1 {
+    font-size: 1.5rem;
+  }
+}
